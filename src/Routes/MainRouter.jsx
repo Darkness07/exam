@@ -2,6 +2,7 @@ import React from 'react'
 import Home from '../pages/Home/Home'
 import Contacts from '../pages/Contacts/Contacts'
 import About from '../pages/About/About'
+import { Route, Routes } from 'react-router-dom'
 
 export default function MainRouter() {
     const nuEtoDa = [
