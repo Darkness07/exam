@@ -1,0 +1,74 @@
+.Home {
+    .main {
+        position: relative;
+        width: 1250px;
+        margin: auto;
+
+        img {
+            position: absolute;
+            left: 0;
+        }
+
+        .mainRight {
+            color: white;
+            right: 0;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            h2 {
+                color: var(--white, #F3F3F3);
+                text-align: center;
+                font-family: Montserrat Alternates;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+            }
+
+            p {
+                color: #FFF;
+                text-align: right;
+                font-family: IBM Plex Mono;
+                font-size: 34px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            .mainRightBott {
+                display: flex;
+                gap: 90px;
+                h3 {
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Montserrat Alternates;
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                p {
+                    color: #FFF;
+                    text-align: center;
+                    font-family: IBM Plex Mono;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+
+        svg {
+            width: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+    }
+}
