@@ -1,3 +1,4 @@
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import MainRouter from "./Routes/MainRouter";
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header/>
       <MainRouter/>
+      <Footer />
     </>
   );
 }

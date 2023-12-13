@@ -16,7 +16,7 @@ export default function Footer() {
                 <ul>
                     <li>Инструкция</li>
                     <li>Release Note</li>
-                    <li>Политика Конфиденциальности</li>
+                    <li>Политика <br /> Конфиденциальности</li>
                     <li>Разработчик</li>
                 </ul>
             </div>

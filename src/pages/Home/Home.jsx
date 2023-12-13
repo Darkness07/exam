@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import car1 from './img/zyro-image 1.png'
 import car2 from './img/zyro-image 2.png'
 import './home.scss'
 import Slider from 'react-slick'
 import linkImg from './img/linkImg'
-import Footer from '../../Components/Footer/Footer'
 export default function Home() {
+  const [widthWindow, setWidthWindow] = useState(0)
+
+  useEffect(() => {
+    setWidthWindow(window.innerWidth)
+  }, [])
+
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToShow:
+      widthWindow >= 1000 ? 4 :
+        widthWindow >= 800 ? 3 : 2,
+    slidesToScroll: 2
   };
   return (
     <div className='Home'>
@@ -115,9 +122,8 @@ export default function Home() {
       <div className="class">
         <h1>Найдите авто по <b>классам</b></h1>
         <div className="main">
-          <div className="block">
-            {/* <img src={linkImg.class_1} alt="" /> */}
-            <div className="img_block c1">
+          <div style={{ width: widthWindow / 6 + 10 }} className="block">
+            <div style={{ width: widthWindow / 6 - 10, height: widthWindow / 6 - 10 }} className="img_block c1">
 
             </div>
             <div className="svgOther">
@@ -126,30 +132,27 @@ export default function Home() {
               </svg>
             </div>
           </div>
-          <div className="block">
-            <div className="img_block c1"></div>
+          <div style={{ width: widthWindow / 6 + 10 }} className="block">
+            <div style={{ width: widthWindow / 6 - 10, height: widthWindow / 6 - 10 }} className="img_block c2"></div>
 
-            {/* <img src={linkImg.class_1} alt="" /> */}
             <div className="svgOther c2">
               <svg width="317" height="104" viewBox="0 0 317 104" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.071347 95.407C12.0624 66.8019 34.1179 42.199 63.1122 25.0851C92.1064 7.97111 126.569 -0.785804 161.615 0.0553704C196.661 0.896545 230.513 11.2931 258.374 29.7717C286.235 48.2503 306.692 73.8736 316.844 103.01L314.447 103.64C304.446 74.9405 284.297 49.7016 256.854 31.5002C229.411 13.2987 196.066 3.0581 161.545 2.22954C127.025 1.40099 93.0798 10.0265 64.5205 26.8838C35.9612 43.7411 14.2365 67.9749 2.42528 96.1509L0.071347 95.407Z" fill="#007FD5" />
               </svg>
             </div>
           </div>
-          <div className="block">
-            <div className="img_block c3"></div>
+          <div style={{ width: widthWindow / 6 + 10 }} className="block">
+            <div style={{ width: widthWindow / 6 - 10, height: widthWindow / 6 - 10 }} className="img_block c3"></div>
 
-            {/* <img src={linkImg.class_1} alt="" /> */}
             <div className="svgOther">
               <svg width="317" height="104" viewBox="0 0 317 104" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.071347 95.407C12.0624 66.8019 34.1179 42.199 63.1122 25.0851C92.1064 7.97111 126.569 -0.785804 161.615 0.0553704C196.661 0.896545 230.513 11.2931 258.374 29.7717C286.235 48.2503 306.692 73.8736 316.844 103.01L314.447 103.64C304.446 74.9405 284.297 49.7016 256.854 31.5002C229.411 13.2987 196.066 3.0581 161.545 2.22954C127.025 1.40099 93.0798 10.0265 64.5205 26.8838C35.9612 43.7411 14.2365 67.9749 2.42528 96.1509L0.071347 95.407Z" fill="#007FD5" />
               </svg>
             </div>
           </div>
-          <div className="block">
-            <div className="img_block c4"></div>
+          <div style={{ width: widthWindow / 6 + 10 }} className="block">
+            <div style={{ width: widthWindow / 6 - 10, height: widthWindow / 6 - 10 }} className="img_block c4"></div>
 
-            {/* <img src={linkImg.class_1} alt="" /> */}
             <div className="svgOther c2">
               <svg width="317" height="104" viewBox="0 0 317 104" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.071347 95.407C12.0624 66.8019 34.1179 42.199 63.1122 25.0851C92.1064 7.97111 126.569 -0.785804 161.615 0.0553704C196.661 0.896545 230.513 11.2931 258.374 29.7717C286.235 48.2503 306.692 73.8736 316.844 103.01L314.447 103.64C304.446 74.9405 284.297 49.7016 256.854 31.5002C229.411 13.2987 196.066 3.0581 161.545 2.22954C127.025 1.40099 93.0798 10.0265 64.5205 26.8838C35.9612 43.7411 14.2365 67.9749 2.42528 96.1509L0.071347 95.407Z" fill="#007FD5" />
@@ -212,7 +215,7 @@ export default function Home() {
       {/* Advantages/////////////// */}
 
       {/* best-selling///////////// */}
-      <div className="bestSelling">
+      {/* <div className="bestSelling">
         <h1>Самые продаваемые автомобили</h1>
         <div className="main">
           <div className="block">
@@ -228,11 +231,11 @@ export default function Home() {
             <img src={linkImg.bestSelling_4} alt="" />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* best-selling///////////// */}
 
       {/* exactly////////////////// */}
-      <div className="exactly">
+      {/* <div className="exactly">
         <h1>Почему именно <b>JLD MOTORS?</b></h1>
         <div className="main">
           <div className="block">
@@ -262,12 +265,11 @@ export default function Home() {
           </div>
         </div>
 
-      </div>
+      </div> */}
       {/* exactly////////////////// */}
 
 
 
-      <Footer />
     </div>
   )
 }

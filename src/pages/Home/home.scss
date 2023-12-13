@@ -103,7 +103,7 @@
 
 
     .Marka {
-        width: 1250px;
+        max-width: 1250px;
         margin: auto;
 
         h1 {
@@ -197,11 +197,11 @@
             width: 1250px;
             margin: auto;
             display: flex;
-
+            padding: 40px;
+            justify-content: space-between;
             .block {
                 position: relative;
-                padding: 40px;
-                width: calc(290px + 80px);
+                max-width: 250px;
                 display: flex;
                 justify-content: center;
 
@@ -211,10 +211,10 @@
                     right: 0;
                     left: 0;
                     bottom: 0;
-                    animation: lol 4s infinite;
+                    animation: lol linear 5s infinite;
 
                     svg {
-                        top: -10px;
+                        top: -20px;
                         left: 0;
                         width: 100%;
                         height: auto;
@@ -223,20 +223,37 @@
                 }
 
                 .svgOther.c2 {
+                    animation: lol linear 5s infinite reverse;
+
                     svg {
                         rotate: 180deg;
                         top: auto;
-                        bottom: 0;
+                        bottom: -20px;
                     }
                 }
 
-                .img_block {
+                .img_block.c1 {
                     background-image: url(./img/class/1.png);
+                }
+
+                .img_block.c2 {
+                    background-image: url(./img/class/2.png);
+                }
+
+                .img_block.c3 {
+                    background-image: url(./img/class/3.png);
+                }
+
+                .img_block.c4 {
+                    background-image: url(./img/class/4.png);
+                }
+
+                .img_block {
                     border-radius: 50%;
                     background-position: center;
                     background-size: cover;
-                    width: 230px;
-                    height: 230px;
+                    max-width:  250px;
+                    max-height: 250px;
                     position: relative;
                     z-index: 1;
 
@@ -415,6 +432,327 @@
         }
     }
 }
+
+
+
+@media(max-width:1400px) {
+    .Home {
+        .Banner {
+            .main {
+                width: 1050px;
+                margin-top: 120px;
+
+                img {
+                    max-width: 650px;
+
+                }
+
+                .mainRight {
+                    p {
+                        font-size: 28px;
+                    }
+
+                    h2 {
+                        font-size: 45px;
+                    }
+
+                    .mainRightBott {
+                        h3 {
+                            font-size: 40px;
+                        }
+
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .Marka {
+            .slick-slide {
+                height: 200px !important;
+
+                div {
+                    height: 100% !important;
+
+                }
+            }
+
+            width: calc(100% - 100px);
+
+            h1 {}
+
+            .slider {
+                .block {
+                    display: flex !important;
+                    justify-content: center;
+
+                    a {
+                        height: 100%;
+                        width: calc(80%);
+                        justify-content: center;
+
+                        img {
+                            height: calc(100% - 100px);
+                        }
+
+                        hr {
+                            width: calc(100% - 20px);
+                        }
+
+                        h2 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .class {
+            .main {
+                position: relative;
+                overflow: hidden;
+                max-width: 1250px;
+                width: calc(100% - 30px);
+                padding: 50px;
+                justify-content: space-between;
+                .block {
+                    padding: 0;
+                    .img_block {
+
+                    }
+                    .svgOther.c2{
+                        svg{
+                            bottom: -25px;
+                        }
+
+                    }
+                    .svgOther{
+                        svg{
+                            top: -25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1150px) {
+    .Home {
+        h1 {
+            font-size: 40px;
+        }
+
+        .Banner {
+            .main {
+                width: 900px;
+
+                img {
+                    max-width: 520px;
+                }
+
+                .mainRight {
+                    p {
+                        padding: 30px 0;
+                        font-size: 26px;
+                    }
+
+                    h2 {
+                        font-size: 40px;
+                    }
+
+                    .mainRightBott {
+                        h3 {
+                            font-size: 35px;
+                        }
+
+                        p {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:950px) {
+    .Home {
+        .Banner {
+            .main {
+                width: 750px;
+
+                img {
+                    max-width: 400px;
+
+                }
+
+                .mainRight {
+                    p {
+                        font-size: 24px;
+                        padding: 20px 0;
+                    }
+
+                    h2 {
+                        font-size: 32px;
+                    }
+
+                    .mainRightBott {
+                        h3 {
+                            font-size: 28px;
+                        }
+
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .Marka {
+            .slick-slide {
+                height: 150px !important;
+            }
+
+            .slider {
+                .slick-arrow {
+                    width: 15px;
+                    height: 15px;
+                }
+
+                .block {
+                    a {
+                        img {}
+
+                        hr {}
+
+                        h2 {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .Home {
+        h1 {
+            font-size: 28px;
+        }
+
+        .Banner {
+            .svg_1 {
+                position: absolute;
+                top: 60%;
+                bottom: 0;
+                margin: auto;
+            }
+
+            .main {
+                position: relative;
+                z-index: 2;
+                width: 100%;
+                flex-direction: column-reverse;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    // max-width: 400px;
+                    position: relative;
+                }
+
+                .mainRight {
+                    position: relative;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    p {
+                        text-align: center;
+                        // font-size: 24px;
+                        // padding: 20px 0;
+                    }
+
+                    h2 {
+                        // font-size: 32px;
+                    }
+
+                    .mainRightBott {
+                        h3 {
+                            // font-size: 28px;
+                        }
+
+                        p {
+                            // font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        .class {
+            .main {
+                .block {
+                    .svgOther.c2{
+                        svg{
+                            bottom: -10px;
+                        }
+                    }
+                    .svgOther{
+                        svg{
+                            top: -10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .Home {
+        .Banner {
+            .svg_1 {
+                display: none;
+            }
+
+            .main {
+                position: relative;
+                z-index: 2;
+                padding: 0 20px;
+                margin: 40px 0;
+
+                img {
+                    width: 100%;
+                }
+
+                .mainRight {
+                    p {
+                        font-size: 14px;
+                    }
+
+                    h2 {
+                        font-size: 30px;
+                    }
+
+                    .mainRightBott {
+                        h3 {
+                            font-size: 25px;
+                        }
+
+                        p {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 
 @keyframes lol {
