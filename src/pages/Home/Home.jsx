@@ -215,7 +215,7 @@ export default function Home() {
       {/* Advantages/////////////// */}
 
       {/* best-selling///////////// */}
-      {/* <div className="bestSelling">
+      <div className="bestSelling">
         <h1>Самые продаваемые автомобили</h1>
         <div className="main">
           <div className="block">
@@ -231,7 +231,7 @@ export default function Home() {
             <img src={linkImg.bestSelling_4} alt="" />
           </div>
         </div>
-      </div> */}
+      </div>
       {/* best-selling///////////// */}
 
       {/* exactly////////////////// */}

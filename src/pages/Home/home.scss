@@ -17,9 +17,6 @@
         margin-bottom: 75px;
     }
 
-
-
-
     .Banner {
         .main {
             position: relative;
@@ -98,9 +95,6 @@
             }
         }
     }
-
-
-
 
     .Marka {
         max-width: 1250px;
@@ -183,9 +177,6 @@
             }
         }
     }
-
-
-
 
     .class {
         h1 {
@@ -297,8 +288,6 @@
         }
     }
 
-
-
     .Advantages {
         width: 100%;
         margin: 140px auto 0;
@@ -359,7 +348,6 @@
             }
         }
     }
-
 
     .bestSelling {
         h1 {
@@ -566,6 +554,23 @@
                 }
             }
         }
+        .bestSelling {
+            h1 {
+                margin-top: 80px;
+            }
+            .main {
+                max-width: 1250px;
+                margin: auto;
+                margin-top: 100px;
+                width: calc(100% - 60px);
+                .block {
+                    
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -693,6 +698,20 @@
                 }
             }
         }
+        .bestSelling {
+            h1 {
+                margin-top: 60px;
+            }
+            .main {
+                margin-top: 60px;
+                .block {
+                    
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -797,6 +816,16 @@
                 }
             }
         }
+        .bestSelling {
+            .main {
+                margin-top: 30px;
+                .block {
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -863,6 +892,18 @@
 
                 .center_img {
                     display: none;
+                }
+            }
+        }
+        .bestSelling {
+            .main {
+                flex-wrap: wrap;
+                margin-top: 30px;
+                .block {
+                    width: calc(50% - 20px);
+                    img {
+                        border-radius: 10px;
+                    }
                 }
             }
         }
