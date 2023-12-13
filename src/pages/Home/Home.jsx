@@ -235,7 +235,7 @@ export default function Home() {
       {/* best-selling///////////// */}
 
       {/* exactly////////////////// */}
-      {/* <div className="exactly">
+      <div className="exactly">
         <h1>Почему именно <b>JLD MOTORS?</b></h1>
         <div className="main">
           <div className="block">
@@ -265,7 +265,7 @@ export default function Home() {
           </div>
         </div>
 
-      </div> */}
+      </div>
       {/* exactly////////////////// */}
 
 

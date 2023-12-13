@@ -387,7 +387,7 @@
 
                 /* Adrenalin */
                 font-family: Electrolize;
-                font-size: 55px;
+                font-size: 1.2em;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -554,17 +554,20 @@
                 }
             }
         }
+
         .bestSelling {
             h1 {
                 margin-top: 80px;
             }
+
             .main {
                 max-width: 1250px;
                 margin: auto;
                 margin-top: 100px;
                 width: calc(100% - 60px);
+
                 .block {
-                    
+
                     img {
                         width: 100%;
                     }
@@ -609,6 +612,28 @@
             }
         }
 
+        .exactly {
+            h1 {
+                font-size: 40px;
+            }
+
+            .main {
+                max-width: 1250px;
+                width: calc(100% - 60px);
+                margin: 50px auto 0;
+                gap: 20px;
+
+                .block {
+                    width: calc(100% / 3 - 20px);
+
+                    svg {}
+
+                    p {
+                        padding-top: 40px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -698,20 +723,25 @@
                 }
             }
         }
+
         .bestSelling {
             h1 {
                 margin-top: 60px;
             }
+
             .main {
                 margin-top: 60px;
+
                 .block {
-                    
+
                     img {
                         border-radius: 10px;
                     }
                 }
             }
         }
+
+
     }
 }
 
@@ -816,12 +846,35 @@
                 }
             }
         }
+
         .bestSelling {
             .main {
                 margin-top: 30px;
+
                 .block {
                     img {
                         border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .exactly {
+            h1 {
+                font-size: 28px;
+            }
+
+            .main {
+
+                .block {
+                    width: calc(100% / 2 - 20px);
+
+                    svg {
+                        width: 70px;
+                    }
+
+                    p {
+                        padding-top: 30px;
                     }
                 }
             }
@@ -895,14 +948,36 @@
                 }
             }
         }
+
         .bestSelling {
             .main {
                 flex-wrap: wrap;
                 margin-top: 30px;
+
                 .block {
                     width: calc(50% - 20px);
+
                     img {
                         border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .exactly {
+            .main {
+                flex-direction: column;
+                align-items: center;
+                .block {
+                    width: calc(100% - 60px);
+
+                    svg {
+                        width: 70px;
+                    }
+
+                    p {
+                        max-width: 250px;
+                        padding-top: 30px;
                     }
                 }
             }
